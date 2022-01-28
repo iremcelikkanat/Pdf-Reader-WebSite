@@ -1,14 +1,14 @@
 # Web-Indexleme-ve-Metin-Parcalama
 asp.net,bootstrap,Sql Server kullanılarak oluşturulmuş bir Web Sitesi
 
-ÖZET
+### ÖZET
  Kullanıcı ve yönetim kısmı bulunan bir web
 uygulamasıdır. Kullanıcılar, kendi yükledikleri pdflere
 ulaşabilmekte ve arama ile farklı kategorilerde
 bulabilmektedir.
 Anahtar Kelimeler: web, sql server, c#, asp.net, pdf
 okuma.
-I. GİRİŞ
+## I. GİRİŞ
  Tasarlanan web sitede; kullanıcı ve admin
 olmak üzere iki login ekranı açılmaktadır. Kullanıcı;
 admin tarafından eklenmekte, pdf yükleme ve
@@ -42,20 +42,20 @@ admin bilgileri Admin, anahtar kelime bilgileri
 Kelime isimli tablolarda tutulmaktadır. Yöntemler
 ve mimari kısmında daha detaylı olarak
 açıklanmaktadır.
-II. TEMEL BİLGİLER
+## II. TEMEL BİLGİLER
  Proje; C# programlama dilinde
 gerçekleştirilmiş olup geliştirme ortamı olarak
 Visual Studio 2019 kullanılmıştır. Web formu
 için ASP.NET tercih edilmiştir. Microsoft Sql
 veritabanı olarak kullanılmıştır.
-III. YÖNTEM VE PROGRAM
+## III. YÖNTEM VE PROGRAM
 MİMARİSİ
  Bu kısımda programın farklı özelliklerini
 oluşturmak için kullandığımız araçlar ve
 yöntemler üzerinde durularak ayrıntılı olarak
 bilgi verilecektir. Program mimarisi daha
 detaylı bir şekilde açıklanacaktır.
-A. Algoritma
+### A. Algoritma
  Dosya yükleme kontrolü olan FileUpload()
 nesnesi web formuna eklenerek dosyaların
 sunucuya yüklenmesini sağlamaktadır. Alınan
@@ -203,7 +203,7 @@ gibi bilgileride ekran üzerinde görünür.
 
 ## Veri Tabanı Sorguları
 
-Sorgu 1: SqlCommand cmd = new
+`Sorgu 1: SqlCommand cmd = new
 SqlCommand("Select * from admin Where Adi='" +
 exampleInputEmail1.Text + "' and Sifre='" +
 exampleInputPassword1.Text + "'", con);
@@ -276,7 +276,7 @@ FROM PDFFileTab WHERE tarih like '%'+@tarih+'%'
 and ders like'%'+@ders+'%' and SL IN(SELECT pdfid
 FROM kullaniciPdf WHERE kid IN(SELECT kid FROM
 tblKullanici WHERE Adi like '%'+@ad+'%' and
-Soyadi like '%'+@soyad+'%'))";
+Soyadi like '%'+@soyad+'%'))"; `
 PDFFileTab, kullaniciPdf ve tblKullanici tabloları
 üzerinden tarih,ders,id,ad,soyad aranan sorgu.
 IV. DENEYSEL SONUÇLAR
