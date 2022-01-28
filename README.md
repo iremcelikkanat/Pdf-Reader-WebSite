@@ -118,18 +118,19 @@ sayfasına yönlendirir.
 
 ![3](https://user-images.githubusercontent.com/56557278/151548015-d65c88e9-db9b-4bd4-ae29-74a3038806a2.PNG)
 
-Şekil 3 Kullanıcı Paneli
+**Şekil 3 Kullanıcı Paneli**
+
 9 adet textbox’dan oluşmaktadır.Birinci arama
 kısmında yazar adı veritabanı üzerinden sorgulanır.
 ![ad](https://user-images.githubusercontent.com/56557278/151548126-ebc07774-efd3-4974-ae78-53ea84108269.png)
 
- Şekil 4 Yazar arama
+ **Şekil 4 Yazar arama**
 DataGridWiev sayesinde sorgular ekran üzerinde
 gösterilir.
 
 ![anahra](https://user-images.githubusercontent.com/56557278/151548158-509705a8-154c-47cf-a098-484057b3f8a6.PNG)
 
- Şekil 5 Anahtar Kelime arama
+**Şekil 5 Anahtar Kelime arama**
 İkinci arama kısmı bir adet textbox ve bir ad İkinci arama kısmı bir adet textbox ve bir adet
 butondan oluşmaktadır.Anahtar Kelimeler
 veritabanı üzerinden sorgulanır. DataGridWiev
@@ -138,7 +139,7 @@ sayesinde sorgular ekran üzerinde gösterilir.
 
 ![ders](https://user-images.githubusercontent.com/56557278/151548266-4886c8a6-9bff-489f-9281-065c044630f5.PNG)
 
-Şekil 6 Ders Adı arama
+**Şekil 6 Ders Adı arama**
 Üçüncü arama kısmı bir adet textbox ve bir adet
 butondan oluşmaktadır.ders isimleri veritabanı
 üzerinden sorgulanır. DataGridWiev sayesinde
@@ -147,7 +148,7 @@ sorgular ekran üzerinde gösterilir.
 ![donem](https://user-images.githubusercontent.com/56557278/151548274-7b8b7d23-cb3b-4759-b5ba-9e99420b2b85.PNG)
 
 
-Şekil 7 Dönem arama
+**Şekil 7 Dönem arama**
 Dorduncu arama kısmı bir adet textbox ve bir adet
 butondan oluşmaktadır.Donem Adları veritabanı
 üzerinden sorgulanır. DataGridWiev sayesinde
@@ -156,7 +157,8 @@ sorgular ekran üzerinde gösterilir.
 ![konu](https://user-images.githubusercontent.com/56557278/151548344-b039cccf-4723-4e2c-8dbc-d25b2bc1ff09.PNG)
 
 
-Şekil 8 Konu Arama
+**Şekil 8 Konu Arama**
+
 Beşinci arama kısmı bir adet textbox ve bir adet
 butondan oluşmaktadır.Pdf üzerindeki konular
 veritabanı üzerinden sorgulanır. DataGridWiev
@@ -165,7 +167,8 @@ sayesinde sorgular ekran üzerinde gösterilir.
 ![dörtlü](https://user-images.githubusercontent.com/56557278/151548289-61c5f2aa-fbf4-4485-a136-adb6c411e063.PNG)
 
 
-Şekil 9 Dörtlü Sorgu
+**Şekil 9 Dörtlü Sorgu**
+
 Bu kısım 4 adet TextBox ve bir adet butonda
 oluşmaktadır.Bu arama kısmında tarih,ders,ad ve
 soyad textboxlarından giriş yapılarak 5’li sorgu
@@ -184,7 +187,7 @@ yükleme,kelime arama gibi işlemler için bu
 kısımdan giriş yapılır.
 ![2a](https://user-images.githubusercontent.com/56557278/151548773-8466de9c-8240-4760-95b0-3d47064884eb.PNG)
 
- Şekil 11 Admin Paneli
+ **Şekil 11 Admin Paneli**
 Bu kısımda kullanıcıyı bir ara yüz karşılar. Bu ara
 yüzde toplamda 5 farklı textbox ve3 farklı buton
 bulunmaktadır. 1.Buton olan Sil butonu textbox ile
@@ -203,7 +206,7 @@ gibi bilgileride ekran üzerinde görünür.
 
 ## Veri Tabanı Sorguları
 
-`Sorgu 1: SqlCommand cmd = new
+"` Sorgu 1: SqlCommand cmd = new
 SqlCommand("Select * from admin Where Adi='" +
 exampleInputEmail1.Text + "' and Sifre='" +
 exampleInputPassword1.Text + "'", con);
@@ -276,7 +279,7 @@ FROM PDFFileTab WHERE tarih like '%'+@tarih+'%'
 and ders like'%'+@ders+'%' and SL IN(SELECT pdfid
 FROM kullaniciPdf WHERE kid IN(SELECT kid FROM
 tblKullanici WHERE Adi like '%'+@ad+'%' and
-Soyadi like '%'+@soyad+'%'))"; `
+Soyadi like '%'+@soyad+'%'))";`"
 PDFFileTab, kullaniciPdf ve tblKullanici tabloları
 üzerinden tarih,ders,id,ad,soyad aranan sorgu.
 IV. DENEYSEL SONUÇLAR
