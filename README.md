@@ -206,7 +206,7 @@ gibi bilgileride ekran üzerinde görünür.
 
 ## Veri Tabanı Sorguları
 
-"` Sorgu 1: SqlCommand cmd = new
+` Sorgu 1: SqlCommand cmd = new
 SqlCommand("Select * from admin Where Adi='" +
 exampleInputEmail1.Text + "' and Sifre='" +
 exampleInputPassword1.Text + "'", con);
@@ -279,7 +279,7 @@ FROM PDFFileTab WHERE tarih like '%'+@tarih+'%'
 and ders like'%'+@ders+'%' and SL IN(SELECT pdfid
 FROM kullaniciPdf WHERE kid IN(SELECT kid FROM
 tblKullanici WHERE Adi like '%'+@ad+'%' and
-Soyadi like '%'+@soyad+'%'))";`"
+Soyadi like '%'+@soyad+'%'))";`
 PDFFileTab, kullaniciPdf ve tblKullanici tabloları
 üzerinden tarih,ders,id,ad,soyad aranan sorgu.
 IV. DENEYSEL SONUÇLAR
